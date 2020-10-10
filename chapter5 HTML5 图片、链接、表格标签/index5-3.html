@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>a 标签 target 属性</title>
+  </head>
+  <body>
+    <!-- 当前窗口打开链接对应网页 -->
+    <a href="http://localhost/index.html" target="_self">当前窗口打开</a>
+    <br />
+    <!-- 新建窗口打开链接对应网页 -->
+    <a href="http://localhost/index.html" target="_blank">新建窗口打开</a>
+  </body>
+</html>
+
+
+<!-- 
+  总结：
+  
+  1、<a> 标签中的 target 属性，代表网页的打开方式，可选值为：
+
+    _self：在当前页面打开链接，默认值
+
+    _blank：在新窗口打开链接，注意这个是打开新的 tab 页，每次点击都打开一个新的 tab 页，会重复打开
+
+    _new：同 _blank，但是只打开一个新的 tab 页，多次点击，会调到新的 tab 页，但是不会重复打开
+ -->

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>使用font-family设置字体系列</title>
+  <style type="text/css">
+    #p1 {
+      font-family: "Microsoft Yahei";
+      font-size: 36px;
+    }
+    #p2 {
+      font-family: "华文楷体","Microsoft Yahei";
+      font-size: 36px;
+    }
+  </style>
+</head>
+
+<body>
+  <p id="p1">测试 css english 设置字体样式——微软雅黑</p>
+  <p id="p2">测试 css english 设置字体样式——华文楷体</p>
+</body>
+
+</html>
+
+
+<!-- 
+  总结：使用font-family设置字体系列
+  1、使用 css 样式为网页中的文字设置字体、字号、颜色等样式属性。
+
+    下面代码实现：为网页中的文字设置字体为宋体。
+      body{font-family:"宋体";}
+
+  2、这里注意不要设置不常用的字体，因为如果用户本地电脑上如果没有安装你设置的字体，就会显示浏览器默认的字体。（因为用户是否可以看到你设置的字体样式取决于用户本地电脑上是否安装你设置的字体。）
+
+  3、现在一般网页喜欢设置“微软雅黑”，因为这种字体即美观又可以在客户端安全的显示出来（用户本地一般都是默认安装的）。如下代码：
+
+      body{font-family:"Microsoft Yahei";}
+      或
+      body{font-family:"微软雅黑";}
+
+      注意：第一种方法比第二种方法兼容性更好一些。
+
+  4、注意：关于字体的名字，必须严格跟系统里面的一模一样，否则不会被识别
+
+  5、字体系列
+  
+    font-family 属性设置文本的字体「系列」。
+
+    font-family 属性应该设置几个字体名称作为一种"后备"机制，如果浏览器不支持第一种字体，他将尝试下一种字体。
+
+    注意: 如果字体系列的名称超过一个字，它必须用引号，如Font Family："宋体"。
+
+    多个字体系列是用一个逗号分隔指明，如：
+      p{font-family:"Times New Roman", Times, serif;}
+ -->

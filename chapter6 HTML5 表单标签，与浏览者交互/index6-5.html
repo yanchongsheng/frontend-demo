@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>网址输入框</title>
+  </head>
+  <body>
+    <form method="POST" action="http://localhost:8080/test">
+      <input type="url">
+      <input type="submit" value="提交">
+    </form>
+  </body>
+</html>
+
+
+<!-- 
+  总结：
+  1、input 标签的 type 属性的值为 url 表示该输入框的类型为网址
+
+  2、把 input 标签的 type 属性设置为 url，输入框中的内容必须以 http:// 或 https:// 开头，且后面必须有内容，否则在表单提交的时候，会有提示报错「请输入网址。」
+    且把鼠标放在输入框内一小会，也会有提示的
+
+ -->

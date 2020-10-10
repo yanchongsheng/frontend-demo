@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>提交按钮</title>
+  </head>
+    <form method="POST" action="http://localhost:8080/test">
+      <label for="name">姓名：</label>
+      <!-- value=""可有可无，主要作用是设置初始值 -->
+      <input type="text" id="name" name="name" value="">
+
+      <input type="submit" value="提交">
+    </form>
+  <body>
+  </body>
+</html>
+
+
+<!-- 
+  总结：
+  1、在表单中有两种按钮可以使用，分别为：提交按钮、重置按钮
+
+  2、当用户需要提交表单信息到服务器时，需要用到提交按钮
+
+  3、语法：
+    <input type="submit" value="提交">
+      type：只有 type 为 submit 时，按钮才有提交作用
+      value：按钮上显示的文字
+    
+  4、跟 button 的异同？
+    <input type="button"> 是一个按钮，不写对应的 js 函数，按下去什么也不会发生
+    <input type="submit"> 点击以后会自动提交 form 表单，即 submit 由第三方实现了一个提交函数了
+ -->

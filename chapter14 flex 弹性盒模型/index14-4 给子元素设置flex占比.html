@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>给子元素设置flex占比</title>
+  <style type="text/css">
+    .box {
+      height: 300px;
+      background: purple;
+      display: flex;
+    }
+
+    .box div {
+      width: 200px;
+      height: 200px;
+    }
+
+    .box1 {
+      flex: 6;
+      background: red;
+    }
+
+    .box2 {
+      flex: 3;
+      background: green;
+    }
+
+    .box3 {
+      flex: 2;
+      background: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="box1">flex:1</div>
+    <div class="box2">flex:3</div>
+    <div class="box3">flex:2</div>
+  </div>
+</body>
+
+</html>
+
+
+<!-- 
+  总结：给子元素设置flex占比
+  1、flex 属性，设置子元素相对于父元素的占比。
+
+  2、技术点的解释：
+
+    1、给子元素设置 flex 属性，可以设置子元素相对于父元素的占比。
+
+    2、flex 属性的值只能是正整数，表示占比多少。
+
+    3、给子元素设置了 flex 之后，其宽度属性会失效。
+
+  3、flex 跟 float 的区别？
+    float 是模糊的相对父元素的左右位置，而 flex 占比则能精确占据父元素的百分比。
+ -->

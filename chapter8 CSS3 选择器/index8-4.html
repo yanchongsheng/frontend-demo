@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ID 选择器</title>
+  <style type="text/css">
+    /* 注意使用的是 # 号 */
+    #box {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box">
+    测试 id 选择器
+  </div>
+  <span id="box">
+    测试 id 选择器
+  </span>
+</body>
+
+</html>
+
+
+<!-- 
+  总结：ID 选择器
+
+  1、使用 ID 选择器，必须给标签添加上 id 属性，为标签设置 id="ID 名称"，而不是 class="类"。
+
+  2、ID 选择符的前面是井号（#）号，而不是英文圆点（.）。
+
+  3、id 属性的值既为当前标签的 id，尽量见名思意，语义化。
+
+  4、关于 id 属性值是否可以重复的说明？
+    实际上操作的时候也不是不行，但是原则上 id 是唯一的，所以最好保持规范。当有需要重复使用的 css 样式的时候使用 class 选择器
+ -->

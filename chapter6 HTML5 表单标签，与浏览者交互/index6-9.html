@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>单选框、复选框</title>
+  </head>
+  <body>
+    <form method="POST" action="http://localhost:8080/test">
+      <label>你是否喜欢旅游？</label>
+      <br />
+      <input type="radio" name="radioLove" value="喜欢" checked="checked">喜欢
+      <input type="radio" name="radioLove" value="不喜欢">不喜欢
+      <input type="radio" name="radioLove" value="无所谓">无所谓
+
+      <br />
+      <label>你对哪些运动感兴趣？</label>  
+      <br />
+      <input type="checkbox" name="checkbox1" value="跑步">跑步
+      <input type="checkbox" name="checkbox2" value="打球">打球
+      <input type="checkbox" name="checkbox1" value="登山" checked="checked">登山
+      <input type="checkbox" name="checkbox1" value="游泳" checked="checked">游泳
+      <input type="checkbox" name="checkbox1" value="健身">健身
+
+      <br />
+      <input type="submit" value="提交">
+    </form>
+  </body>
+</html>
+
+
+<!-- 
+  总结：
+  1、语法：
+    <input type="radio/checkbox" value="值" name="名称" checked="checked">
+
+    value：提交数据到服务器的值
+
+    name：为控件命名，以备后台程序使用
+
+    checked：值为 checked 时，该选项默认被选中
+
+  2、注意：同一组的单选按钮，name 取值一定要一致，这样同一组的单选按钮才可以起到单选的作用！！！
+
+    不用 name 命名或者 name 不同，那就不是同一个组了，相当于多个组，每个组一个单选按钮
+ -->

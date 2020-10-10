@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style type="text/css">
+    div {
+      border: 1px solid purple;
+      padding: 10px 20px 30px 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <span>box</span>
+  </div>
+</body>
+
+</html>
+
+
+<!-- 
+  总结：
+  1、元素内容与边框之间是可以设置距离的，称之为“内边距（填充）”。填充也可分为上、右、下、左(顺时针)。如下代码：
+
+      div{padding:20px 10px 15px 30px;}
+        注意：顺序不能乱，必须是上右下左的顺时针方向
+
+      可以分开写上面代码：
+        div{
+          padding-top:20px;
+          padding-right:10px;
+          padding-bottom:15px;
+          padding-left:30px;
+        }
+
+      如果上、右、下、左的填充都为10px;可以这么写
+        div{padding:10px;}
+
+      如果上下填充一样为10px，左右一样为20px，可以这么写：
+        div{padding:10px 20px;}
+        注意：这里是上-下、左-右，跟边框圆角的对角线要区分开
+
+  2、注意：简写形式三个值时为：上、左-右、下        
+ -->

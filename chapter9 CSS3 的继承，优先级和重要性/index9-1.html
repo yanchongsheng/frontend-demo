@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>样式的继承</title>
+  <style type="text/css">
+    p {
+      /* 具有继承性，span 内字体颜色变了 */
+      color: red; 
+    }
+    p {
+      /* 不具有继承性，span 没有加边框 */
+      border: red 3px solid;
+    }
+  </style>
+</head>
+
+<body>
+  <p>有些<span> css 的样式</span>具有继承性</p>
+  <p>有些 css 的样式是不具有继承性的</p>
+</body>
+
+</html>
+
+
+<!-- 
+  总结：样式的继承
+  1、CSS 的某些样式是具有继承性的，那么什么是继承呢？继承是一种规则，它允许样式不仅应用于某个特定 html 标签元素，而且应用于其「后代」。
+
+    比如下面代码：如某种颜色应用于 p 标签，这个颜色设置不仅应用 p 标签，还应用于 p 标签中的所有子元素文本，这里子元素为 span 标签。
+
+    p{color:red;}
+    <p>三年级时，我还是一个<span>胆小如鼠</span>的小女孩。</p>    
+    p 中的文本与 span 中的文本都设置为了红色
+
+  2、但注意有一些 css 样式是不具有继承性的。如 border:1px solid red;
+
+    p{border:1px solid red;}
+    <p>三年级时，我还是一个<span>胆小如鼠</span>的小女孩。</p>
+
+    在上面例子中它代码的作用只是给 p 标签设置了边框为 1 像素、红色、实心边框线，而对于子元素 span 是没用起到作用的。
+
+  3、{border:1px solid red;}
+    border 简写中，顺序随意，但为了规范 还是 按照 width style color 来的，而且如果不设置其中的某个值，也不会出问题
+
+    这是 border 的简写形式，对应的属性是：
+    border-width → 1px 
+    border-style → solid
+    border-color → red
+
+  4、注意：继承只是在它本身没有设置的时候才继承父辈的属性
+
+  5、CSS 中哪些样式可以继承？
+    大多数的样式都会继承，像字体相关的 [font-size/line-height/font-weight] 基本都会继承，跟盒模型相关的 [margin/padding/border] 基本不会继承
+
+    关于 css 哪些样式可以继承：https://www.imooc.com/qadetail/255609
+
+    具体到时候可以 Google 搜索！！！
+ -->

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>使用border为盒子添加边框（一）</title>
+  <style type="text/css">
+    p {
+      border-width: thick;
+      border-style: dotted;
+      border-color: #ccc;
+      /* border: thick dotted #ccc; */
+    }
+  </style>
+</head>
+
+<body>
+  <p>测试边框三属性</p>
+</body>
+
+</html>
+
+
+<!-- 
+  总结：使用border为盒子添加边框（一）
+  1、盒子模型的边框就是围绕着内容及补白的线，这条线你可以设置它的「粗细、样式和颜色(边框三个属性)」。
+
+  2、下面代码为 div 来设置边框粗细为 2px、样式为实心的、颜色为红色的边框：
+
+    div{
+        border:2px  solid  red;
+    }
+    上面是 border 代码的缩写形式，可以分开写：
+    div{
+        border-width:2px;
+        border-style:solid;
+        border-color:red;
+    }
+
+  3、注意：
+
+      1、border-style（边框样式）常见样式有：
+
+        dashed（虚线）| dotted（点线）| solid（实线）
+
+
+      2、border-color（边框颜色）中的颜色可设置为十六进制颜色，如:
+
+        border-color:#888; // 前面的井号不要忘掉
+
+      3、border-width（边框宽度）中的宽度也可以设置为：
+
+        thin | medium | thick（但不是很常用），最常还是用像素（px）
+
+  4、border 简写后需要写明 边框的宽度，样式，和颜色，至于顺序并没有要求，且只要写明「样式」，就有边框效果了，宽度和颜色是有默认值的，即 3px 黑色
+ -->

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>什么是盒模型</title>
+  <style type="text/css">
+    div {
+      border: red 1px solid;
+    }
+    .d2 {
+      /* 可以通过浏览器中的盒子来观察盒模型，通过调整 css 来观察，margin、padding、border */
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>hello world</div>
+  <div class="d2">你好</div>
+</body>
+
+</html>
+
+
+<!-- 
+  总结：什么是盒模型
+  1、盒子模型：content（内容），内填充（padding），边框（border），外边距（margin）
+
+  盒子模型的内填充、外边距、边框都有四个方向，上右下左（top|right|bottom|left），注意顺序「上右下左」
+
+  「内容」或者说（div）元素的实际高度为：自身高度+上填充+下填充+上边框宽短+下边框宽度；同理，实际宽短计算。
+
+  块级标签都具备盒子模型的特征
+
+  2、盒子模型的原理
+
+  3、布局模型和盒模型的区别是什么？
+    布局模型是设计网页结构的，比如好多月饼盒子在大礼包里面的摆放，盒模型是设计一个区域元素的结构，比如月饼盒子里面月饼的摆放。
+
+  4、视频中 padding-top 改小了，怎么还往上移呢？
+    上边的填充距离变小了，下边的填充距离没有变，不是内容向上移动，而是整个盒子会变小。
+ -->

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>使用 thead、tbody、tfoot 标签</title>
+  </head>
+  <body>
+    <table border="100px">
+      <thead>
+        <tr>
+          <th>姓名</th>
+          <th>电话</th>
+          <th>电子邮件</th>
+          <th>职务</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>youcai</td>
+            <td>123456</td>
+            <td>123456@qq.com</td>
+            <td>youcai</td>
+          </tr>
+      </tbody>
+      <tbody>
+        <tr>
+            <td>youcai</td>
+            <td>123456789</td>
+            <td>123456789@qq.com</td>
+            <td>youcai</td>
+          </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>总数</td>
+          <td>总数</td>
+          <td>总数</td>
+          <td>总数</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
+
+
+<!-- 
+  总结：
+  
+  1、使用 thead、tbody、tfoot 标签，定义表格
+
+    thead：定义表格的表头，用于对 html 表格中的表头内容进行分组
+
+    tbody：定义表格的内容，如果不加 thead、tbody、tfoot，table 表格加载完后才显示。加上这些表格结构，tbody 包含的内容下载完优先显示，不必等待表格结束后再显示，同时如果表格很长，用 tbody 分段，
+    可以一部分一部分的显示。即 table 可以按结构一块块的显示，不必等整个表格加载完后显示。
+
+    tfoot：定义表格底部，用于对 html 表格中的表注（页脚）内容进行分组
+
+  2、thead、tbody、tfoot 标签，有助于对表格中的「行」进行分组。当创建表格时，如果希望有一个标题行、一些带有数据的行、以及位于底部的一个总计行。这种划分使浏览器有能力支持独立于表格标题和页脚的表格
+  正文滚动。当长的表格被打印时，表格的表头和页脚可被打印在包含数据的每张页面上。
+ -->

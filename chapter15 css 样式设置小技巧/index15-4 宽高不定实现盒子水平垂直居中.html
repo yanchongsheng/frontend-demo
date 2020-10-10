@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>宽高不定实现盒子水平垂直居中</title>
+  <style type="text/css">
+    .father {
+      border: 1px solid purple;
+      position: relative;
+      height: 500px;
+    }
+    .son {
+      border: 1px solid blue;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="father">
+    <div class="son">慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网慕课网</div>
+  </div>
+</body>
+
+</html>
+
+
+<!-- 
+  总结：宽高不定实现盒子水平垂直居中
+  1、未知宽高实现盒子水平垂直居中，通常使用定位以及 translate 完成。
+
+  2、技术点的解释：
+
+    1、利用父元素设置相对定位,子元素设置绝对定位,那么子元素就是相对于父元素定位的特性。
+
+    2、子元素设置上和左偏移的值都为50%。
+
+    3、然后再用css3属性translate位移,给上和左都位移-50%距离，就能达到垂直水平居中的效果。
+
+  3、transform
+    CSS transform 属性允许你旋转，缩放，倾斜或平移给定元素。这是通过修改 CSS 视觉格式化模型的坐标空间来实现的。
+
+    https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform
+
+  4、translate
+    translate() 这个 CSS 函数在水平和/或垂直方向上重新定位元素。 其结果是 <transform-function> 类型。该变换由二维向量构成。 它的坐标定义了元素在每个方向上移动了多少。translate(x轴偏移，y轴偏移)
+
+    https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-function/translate
+ -->

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>文本输入框、密码输入框</title>
+  </head>
+  <body>
+    <form method="POST" action="http://localhost:8080/test">
+      <label for="username">姓名：</label>
+      <input type="text" name="username" id="username" value="默认值" placeholder="提示内容">
+      <br />
+      <label for="password">密码：</label>
+      <input type="password" name="password" id="password" value="" placeholder="提示内容">
+    </form>
+  </body>
+</html>
+
+
+<!-- 
+  总结：
+  1、语法
+    <input type="text或password" name="名称" value="文本">
+
+      name：为文本框命名，以备后台程序使用；注意：name 属性相当于给文本框中输入内容定义一个变量，name 属性的值就是变量名，后台调用程序必须知道 name 的值才能调用
+
+      value：为文本输入框设置默认值（一般起到提示作用）
+    
+    2、value 和 placeholder 的区别？
+
+      value 是文本框的默认内容，是真正存在的占用文本框位置。
+
+      placeholder 是在文本框中显示，但不占用文本框的位置，不是真正存在的，一般用来提示用户。两者功能不同
+
+      两者同时存在的情况下，会优先显示 value
+ -->

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>使用margin为盒子设置外边距（边界）</title>
+  <style type="text/css">
+    div {
+      width: 300px;
+      height: 300px;
+      border: 1px solid purple;
+    }
+
+    #box1 {
+      margin-bottom: 30px;
+    }
+    #box2 {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box1">box1</div>
+  <div id="box2">box2</div>
+</body>
+
+</html>
+
+
+<!-- 
+  总结：使用margin为盒子设置外边距（边界）
+  1、元素与其它元素之间的距离可以使用边界（margin）来设置。边界也是可分为上、右、下、左。如下代码：
+
+      div{margin:20px 10px 15px 30px;}
+      注意顺序：上右下左
+
+      也可以分开写：
+        div{
+          margin-top:20px;
+          margin-right:10px;
+          margin-bottom:15px;
+          margin-left:30px;
+        }
+        
+      如果上右下左的边界都为10px;可以这么写：
+        div{ margin:10px;}
+
+      如果上下边界一样为10px，左右一样为20px，可以这么写：
+        div{ margin:10px 20px;}
+
+  2、总结一下：padding 和 margin 的区别，padding 在边框里，margin 在边框外。
+
+  3、关于两个盒模型显示 margin 的计算问题
+      如果两个相邻的盒子都设定了 margin，那么这两个盒子之间的距离就是取两个 margin 值较大的。  
+ -->

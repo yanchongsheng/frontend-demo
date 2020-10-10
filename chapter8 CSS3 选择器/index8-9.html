@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>伪类选择器</title>
+  <style type="text/css">
+    /* 给不同的 a 设置不同的样式，写法 1 */
+    /* .first a:hover {
+      color: red;
+      font-size: 30px;
+    }
+    .second a:hover {
+      color: blue;
+      font-size: 30px;
+    } */
+
+    /* 给不同的 a 设置不同的样式，写法 2 */
+    /* a#a1:hover {
+      color: green;
+      font-size: 30px;
+    }
+    a#a2:hover {
+      color: yellow;
+      font-size: 30px;
+    } */
+
+    /* 给不同的 a 设置不同的样式，写法 3 */
+    a.c1:hover {
+      color: green;
+      font-size: 30px;
+    }
+    a.c2:hover {
+      color: purple;
+      font-size: 30px;
+    } 
+    /* 
+      同时给两个标签试着 hover 写法
+      注意：以下写法是错误的：
+        h1,h2:hover {
+          color: red;
+          font-size: 10px;
+        }
+      这段写法的意思是：给 h1 和 h2:hover 设置样式
+     */
+    h1:hover,h2:hover {
+      color: red;
+      font-size: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>勇气</h1>
+  <h2>哈喽</h2>
+  <p class="first">
+    <a href="http://www.imooc.com" id="a1" class="c1">胆小如鼠</a>
+  </p>
+  <hr />
+  <p class="second">
+    <a href="http://www.imooc.com" id="a2" class="c2">胆小如鼠</a>
+  </p>
+</body>
+
+</html>
+
+
+<!-- 
+  总结：伪类选择器
+  1、更有趣的是伪类选择符，为什么叫做伪类选择符？它允许给 html 不存在的标签（标签的某种状态）设置样式。
+  
+  比如说我们给 html 中一个标签元素的鼠标滑过的状态来设置字体颜色：
+    a:hover{color:red;}
+    上面一行代码就是为 a 标签鼠标滑过的状态设置字体颜色变红。这样就会使第一段文字内容中的“胆小如鼠”文字加入鼠标滑过字体颜色变为红色特效。
+
+  2、关于伪类选择符，到目前为止，可以兼容所有浏览器的“伪类选择符”就是 a 标签上使用 :hover 了（其实伪类选择符还有很多，尤其是 css3 中，但是因为不能兼容所有浏览器，本教程只是讲了这一种最常用的）。其实 :hover 可以放在任意的标签上，比如说 p:hover，但是它们的兼容性也是很不好的，所以现在比较常用的还是 a:hover 的组合。
+
+  3、注意：伪类选择符的写法「a:hover」，使用的是冒号『:』
+ -->

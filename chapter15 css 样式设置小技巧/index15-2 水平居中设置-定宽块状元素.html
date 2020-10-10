@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>水平居中设置-定宽块状元素</title>
+  <style type="text/css">
+    .blockCenter {
+      border: 1px solid purple;
+      /* 注意：块状元素必须定宽 */
+      width: 200px;
+      /* text-align: center; */
+      /* margin 两个值表示：上下、左右 */
+      margin: 20px auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="blockCenter">
+    我是定宽块状元素，哈哈，我要水平居中显示。
+  </div>
+</body>
+
+</html>
+
+
+<!-- 
+  总结：水平居中设置-定宽块状元素
+  1、注意：本例中，在 div 上设置 text-align:center; 表示的是 div 元素内的内容居中显示。但是，想让 div 本身居中，就要再想办法了。
+
+  2、当被设置元素为 块状元素 时用 text-align：center 就不起作用了，这时也分两种情况：定宽块状元素和不定宽块状元素。(定宽块状元素：块状元素的宽度width为固定值。)
+
+  满足定宽和块状两个条件的元素是可以通过设置“左右margin”值为“auto”来实现居中的。在元素本身上设置即可，因为 margin 是对元素本身起作用的，举例：
+    示例一：
+      margin:20px auto;
+    示例二：
+      margin-left:auto;
+      margin-right:auto;
+
+  3、注意，以下三个条件缺一不可！！！
+    （1）块状元素
+    （2）定宽
+    （3）左右 margin 设置为 auto
+ -->

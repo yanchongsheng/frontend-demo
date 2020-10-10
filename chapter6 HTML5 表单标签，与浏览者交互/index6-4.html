@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>数字输入框</title>
+  </head>
+  <body>
+    <form method="POST" action="http://localhost:8080/test">
+      <input type="number" max="10" min="3" name="number">
+      <input type="submit" value="提交">
+    </form>
+  </body>
+</html>
+
+
+<!-- 
+  总结：
+  1、数字输入框：
+
+    input 的 type 属性设置为 number，则表示该输入框的类型为数字
+
+    数字框只能输入数字，输入其它字符无效
+
+    数字框最右侧会有一个上下按钮，可以调整输入数字的大小，不同浏览器表现不一致；chrome 浏览器中，只有鼠标放到输入框中，才会显示上下的加减按钮
+
+  2、除了数字以外，数字输入框还可以输入以下字符：+，-，「.」，e（表示数学中的一个无理常数，约等于 2.71828）
+
+  3、input 的 type 属性设置为 number 时，可以设置 max 属性 和 min 属性，来规定允许的最大(包含指定值)、最小值(包含指定值)
+
+    在 Chrome 浏览器中，这个限定并没有在输入的时候限制必须输入范围内的值，但是在表单提交的时候会提示；且通过上下的加减按钮调整的时候，也是会受到这个限制的
+ -->

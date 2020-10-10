@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>使用border-radius设置圆角</title>
+  <style type="text/css">
+    div {
+      width: 200px;
+      height: 200px;
+      margin-left: 500px;
+      border: 3px solid purple;
+      /* border-radius: 100px; */
+      /* 正方形一半及以上时，显示为圆形 */
+      border-radius: 50%;
+    }
+
+    div {
+      border-radius: 15px 30px 5px 10px;
+    }
+
+    div {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 30px;
+    }
+
+    div {
+      /* 
+        左上角和右下角圆角一样为 10px，右上角和左下角圆角一样为 30px
+        即：对角线关系
+       */
+      border-radius: 10px 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+</body>
+
+</html>
+
+
+<!-- 
+  总结：使用border-radius设置圆角
+  1、元素边框的圆角效果可以使用 border-radius 属性来设置。圆角可分为左上、右上、右下、左下。如下代码：
+
+    div{border-radius: 20px 10px 15px 30px;}
+      注意：值顺序为：左上、右上、右下、左下，是固定的
+
+    也可以分开写：
+      div{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 30px;
+      }
+
+    如果四个圆角都为 10px; 可以这么写：
+      div{ border-radius:10px;}
+
+    如果左上角和右下角圆角效果一样为 10px，右上角和左下角圆角一样为 20px，可以这么写：
+      div{ border-radius:10px 20px;}
+
+    需要特别注意的：一个正方形，当设置圆角效果值为元素宽度一半及以上时，显示效果为圆形。例如：
+      div {
+        width: 200px;
+        height: 200px;
+        border: 5px solid red;
+        border-radius: 100px;
+      }
+
+      也可以写为百分比50%
+      div {
+        width: 200px;
+        height: 200px;
+        border: 5px solid red;
+        border-radius: 50%;
+      }
+  2、总结
+      border-radius 共四个属性值，左上角，右上角，右下角，左下角。
+      
+      只有一个值的时候：四个角同值
+
+      有两个值的时候：左上-右下同值、右上-左下同值
+
+      有三个值的时候：左上、右上-左下同值、右下
+ -->

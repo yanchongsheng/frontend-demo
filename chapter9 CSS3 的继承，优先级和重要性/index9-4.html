@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>选择器最高层级!important</title>
+  <style type="text/css">
+    span{
+      /* !important 跟样式之间可以有空格，也可以没有空格 */
+      color: blue !important;
+    }
+    span {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <p>选择器最高层级 <span>!important</span></p>
+</body>
+
+</html>
+
+
+<!-- 
+  总结：选择器最高层级!important
+  1、我们在做网页代码的时，有些特殊的情况需要「为某些样式设置具有最高权值」，怎么办？这时候我们可以使用「!important」来解决。
+
+  如下代码：
+    p{color:red!important;}
+    p{color:green;}
+    <p class="first">三年级时，我还是一个<span>胆小如鼠</span>的小女孩。</p>
+
+    这时 p 段落中的文本会显示的 red 红色。
+  
+  2、注意：!important 要写在分号的前面。!important 跟样式之间可以有空格，也可以没有空格
+
+  3、这里注意当网页制作者不设置 css 样式时，浏览器会按照自己的一套样式来显示网页。并且用户也可以在浏览器中设置自己习惯的样式，比如有的用户习惯把字号设置为大一些，使其查看网页的文本更加清楚。这时注意样式优先级为：浏览器默认的样式 < 网页制作者样式 < 用户自己设置的样式，「但记住!important 优先级样式是个例外，权值高于用户自己设置的样式」。
+ -->

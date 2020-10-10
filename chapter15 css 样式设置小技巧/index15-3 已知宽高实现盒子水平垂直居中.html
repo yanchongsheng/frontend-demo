@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>已知宽高实现盒子水平垂直居中</title>
+  <style type="text/css">
+    .father {
+      border: 1px solid purple;
+      position: relative;
+      height: 300px;
+    }
+    .son {
+      position: absolute;
+      border: 1px solid blue;
+      width: 200px;
+      height: 200px;
+      
+      top: 50%;
+      left: 50%;
+      margin-top: -100px;
+      margin-left: -100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="father">
+    <div class="son"></div>
+  </div>
+</body>
+
+</html>
+
+
+<!-- 
+  总结：已知宽高实现盒子水平垂直居中
+  1、已知宽高实现盒子水平垂直居中，通常使用定位完成。
+
+  2、技术点的解释：
+
+    1、利用父元素设置相对定位,子元素设置绝对定位,那么子元素就是相对于父元素定位的特性。
+
+    2、子元素设置上和左偏移的值都为50%，是元素的左上角在父元素中心点的位置。
+
+    3、然后再用margin给上和左都给负的自身宽高的一半,就能达到垂直水平居中的效果。
+ -->

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>水平分割线标签</title>
+    <style type="text/css">
+      hr {
+        background-color: red;
+        height: 20px;
+        width: 50%;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    hello <hr />
+    world
+  </body>
+</html>
+
+
+<!-- 
+  总结：
+  1、使用 <hr /> 标签，实现在页面中显示水平分割线
+
+  2、xhtml1.0 版本写法：<hr />，建议采用该写法
+     html4.0 版本写法：<hr>
+
+  3、注意：空标签，是只有一个开始标签，没有结束标签的
+    「</hr>」这样的写法，是不会生效的！
+
+  4、<hr /> 标签在浏览器中的默认样式，线条比较粗、颜色为灰色
+    不过这些可以通过 css 对其进行调整  
+
+  5、<ht /> 标签演示调节，注意下面的写法：
+    <hr color="颜色" size="高度" width="宽度"/>
+
+  6、注意：css 调整规则
+    color 一般都是针对字体颜色
+    线条需要用：background-color
+    但是单纯的将背景色改变是不够的，线条还是灰色，需要给线条一个高度
+    这样背景色显示了，但是原来的灰色还在，这是因为 hr 是默认有 border 的，需要将它的边框去掉：border： none
+ -->

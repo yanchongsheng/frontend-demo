@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>分组选择器</title>
+  <style type="text/css">
+    h1, h2, h3, h4, h5 {
+      color: sandybrown;
+    }
+    .p1, #i1 span {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>分</h1>
+  <h2>组</h2>
+  <h3>选</h3>
+  <h4>择</h4>
+  <h5>符</h5>
+  <p class="p1">测试类选择器</p>
+  <p id="i1">测试 <span>id</span> 选择器</p>
+</body>
+
+</html>
+
+
+<!-- 
+  总结：分组选择器
+  1、当你想为 html 中多个标签元素设置同一个样式时，可以使用分组选择符「,」，如下代码为右侧代码编辑器中的 h1、span 标签同时设置字体颜色为红色：
+
+  h1,span{color:red;}
+  
+  它相当于下面两行代码：
+
+  h1{color:red;}
+  span{color:red;}
+ -->

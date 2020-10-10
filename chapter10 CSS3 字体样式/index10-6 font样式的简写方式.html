@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>font样式的简写方式</title>
+  <style type="text/css">
+    p {
+      /* 注意：简写的写法，以及顺序，字体设置中「中文字体,英文字体」 */
+      font: italic small-caps bold 35px/3em "华文楷体","Microsoft Yahei";
+    }
+  </style>
+</head>
+
+<body>
+  <p>font 样式缩写测试</p>
+</body>
+
+</html>
+
+
+<!-- 
+  总结：font样式的简写方式
+  1、网页中的字体 css 样式代码也有他自己的缩写方式，下面是给网页设置字体的代码：
+
+    body{
+      font-style:italic;
+      font-weight:bold; 
+      font-size:12px; 
+      line-height:1.5em; 
+      font-family:"宋体",sans-serif;
+    }
+    
+    这么多行的代码其实可以缩写为一句：
+
+    body{
+      font:italic  bold  12px/1.5em  "宋体",sans-serif;
+    }
+  2、注意：
+
+    使用这一简写方式你至少要指定 font-size 和 font-family 属性，其他的属性(如 font-weight、font-style、font-variant、line-height)如未指定将自动使用默认值。
+
+    在缩写时 font-size 与 line-height 中间要加入“/”斜扛。
+
+    一般情况下因为对于中文网站，英文还是比较少的，所以下面缩写代码比较常用：
+      body{
+        font:12px/1.5em  "宋体",sans-serif;
+      }
+    只是有字号、行间距、中文字体、英文字体设置。
+
+  3、注意
+  
+    必须按照这个顺序写 ：font-style | font-variant | font-weight | font-size | line-height | font-family
+
+    顺序不能改变。这种简写方法只有在同时指定 font-size 和 font-family 属性时才起作用。而且，如果你没有设定 font-weight, font-style, 以及 font-varient ，他们会使用缺省值
+ -->

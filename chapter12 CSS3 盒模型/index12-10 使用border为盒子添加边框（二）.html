@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>使用border为盒子添加边框（二）</title>
+  <style type="text/css">
+    .l1 {
+      border-bottom-width: 3px;
+      border-bottom-style: dotted;
+      border-bottom-color: red;
+      /* border-bottom: 3px dotted red; */
+    }
+    .l2 {
+      border-left-style: solid;
+      border-left-width: 10px;
+      border-left-color: green;
+      /* border-left: 10px solid green; */
+    }
+    .l3 {
+      border-top-width: 3px;
+      border-top-style: dashed;
+      border-top-color: blue;
+      /* border-top: 3px dashed blue; */
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li class="l1">别让不会说话害了你</li>
+    <li class="l2">二十七八岁就应该有的见识</li>
+    <li class="l3">别让不好意思害了你</li>
+  </ul>
+</body>
+
+</html>
+
+
+<!-- 
+  总结：使用border为盒子添加边框（二）
+  1、如果想为 p 标签单独设置「下」边框，而其它三边都不设置边框样式怎么办呢？css 样式中允许只为一个方向的边框设置样式：
+
+    div{border-bottom:1px solid red;}
+    同样可以使用下面代码实现其它三边(上、右、左)边框的设置：
+
+    border-top:1px solid red;
+    border-right:1px solid red; 
+    border-left:1px solid red;
+ -->

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>使用color设置字体颜色</title>
+  <style type="text/css">
+    .a1 {
+      color: red;
+    }
+    .a2 {
+      /* 注意 rgb 方式的写法 */
+      color: rgb(70, 150, 70);
+    }
+    .a3 {
+      color: #ff00ff;
+    }
+  </style>
+</head>
+
+<body>
+  <a class="a1" href="https://www.imooc.com/">慕课网1</a>
+  <a class="a2" href="https://www.imooc.com/">慕课网2</a>
+  <a class="a3" href="https://www.imooc.com/">慕课网3</a>
+</body>
+
+</html>
+
+
+<!-- 
+  总结：使用color设置字体颜色
+
+  1、color 属性可以设置字体颜色。
+
+  2、color 的值有 3 种设置方式：
+
+    英文命令颜色
+      p{color:red;}
+      
+    RGB颜色
+      这个与 photoshop 中的 RGB 颜色是一致的，由 R(red)、G(green)、B(blue) 三种颜色的比例来配色。
+
+      p{color:rgb(133,45,200);}
+      每一项的值可以是 0~255 之间的整数，也可以是 0%~100% 的百分数。如：
+      p{color:rgb(20%,33%,25%);}
+
+    十六进制颜色
+      这种颜色设置方法是现在比较普遍使用的方法，其原理其实也是 RGB 设置，但是其每一项的值由 0-255 变成了十六进制 00-ff。
+
+      p{color:#00ffff;}
+
+  3、注意 rgb 方式的写法，16 进制颜色中：
+    白色：#ffffff
+    黑色：#000000
+ -->

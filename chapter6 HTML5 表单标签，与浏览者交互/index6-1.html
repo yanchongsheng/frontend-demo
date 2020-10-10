@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>表单标签</title>
+  </head>
+  <body>
+    <form method="POST" action="http://localhost:8080/test">
+      <label for="username">用户名：</label>
+      <input type="text" name="username" id="username" value="" placeholder="请输入用户名" maxlength="20"/>
+
+      <label for="password">密码：</label>
+      <input type="password" name="password" id="password" value="" placeholder="请输入密码" maxlength="2"/>
+
+      <input type="submit" value="确定" name="submit" />
+      <input type="reset" value="重置" name="reset" />
+    </form>
+  </body>
+</html>
+
+
+<!-- 
+  总结：
+  1、网站通过 html 表单与用户进行交互。表单可以把浏览者输入的数据传送到服务器端
+
+  2、语法：
+    <form method="传送方式" action="服务器文件"></form>
+
+    注意：form 标签是成对出现的
+    
+    action：浏览者输入的数据被传送到的地方，比如「一个后端接口」或者「一个页面」
+
+  3、注意：
+    所有表单控件（文本框、文本域、按钮、单选框、复选框等）都必须放在 form 标签之间，否则用户输入的信息提交不到服务器上
+
+  4、input 标签有 placeholder 属性，用户提示用户输入
+
+     maxlength 属性控制输入的最大长度
+
+     input 标签的 type 属性：「submit」实现了提交功能，「reset」实现了重置功能
+
+     name 属性是给后台程序员看的
+
+     id 属性就像身份证，唯一标识这个标签
+
+     value 属性保存传送回服务器的值
+
+  5、label 标签的作用
+    label 标签的 for 和 input 标签的 id 关联，点击 label 的时候可以选中 input！！！
+    语义化，通常用来做 input 标签的内容标记
+
+  6、解决表单提交的时候 submit 的值也会被提交的问题？
+    将 name 去掉，submit 就不会被提交到后台了
+ -->

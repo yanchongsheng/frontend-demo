@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>浮动模型</title>
+  <style type="text/css">
+    #div1 {
+      width: 200px;
+      height: 100px;
+      border: 2px solid purple;
+      float: right;
+      margin: 0 auto;
+    }
+    #div2 {
+      width: 200px;
+      height: 100px;
+      border: 2px solid purple;
+      /* margin: 0 auto; */
+      /* float:right; */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="div1">栏目1浮动</div>
+  <div id="div2">栏目2没有浮动</div>
+</body>
+
+</html>
+
+
+<!-- 
+  总结：浮动模型
+  1、块状元素这么霸道都是独占一行，如果现在我们「想让两个块状元素并排显示」，怎么办呢？不要着急，「设置元素浮动」就可以实现这一愿望。
+
+  2、任何元素在默认情况下是不能浮动的，但可以用 CSS 定义为浮动，如 div、p、table、img 等元素都可以被定义为浮动。如下代码可以实现两个 div 元素一行显示：
+
+    div{
+        width:200px;
+        height:200px;
+        border:2px red solid;
+        float:left;
+    }
+    <div id="div1"></div>
+    <div id="div2"></div>
+
+  3、只写 #div1{float:left} 这个时候：
+
+      当框 1 向左浮动时，它脱离文档流并且向左移动，直到它的左边缘碰到包含框的左边缘。
+
+      因为它不再处于文档流中，所以它不占据空间，实际上覆盖住了框 2，使框 2 从视图中消失。
+
+      再理解一下float的含义：
+
+        浮动的框可以向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。
+
+        由于浮动框不在文档的普通流中，所以文档的普通流中的块框表现得就像浮动框不存在一样。
+
+  4、浮动顾名思义就是浮动在了正常的流上，当内联元素遇到浮动元素时就会环绕着他，所以那个文字就卡在了浮动元素边界下方
+ -->

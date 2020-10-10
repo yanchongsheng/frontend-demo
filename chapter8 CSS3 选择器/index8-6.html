@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>子选择器</title>
+  <style type="text/css">
+    /* solid 实线的意思；注意：border 添加样式的写法 */
+    .food>li {
+      border: 3px solid red;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>食物</h1>
+  <ul class="food">
+      <li>水果
+          <ul>
+            <li>香蕉</li>
+              <li>苹果</li>
+              <li>梨</li>
+          </ul>
+      </li>
+      <li>蔬菜
+        <ul>
+            <li>白菜</li>
+              <li>油菜</li>
+              <li>卷心菜</li>
+          </ul>
+      </li>
+  </ul>
+</body>
+
+</html>
+
+
+<!-- 
+  总结：子选择器
+  1、还有一个比较有用的选择器「子选择器」，即大于符号(>)，用于选择指定标签元素的「第一代子元素」。
+
+    .food>li{border: 1px solid red;}
+    这行代码会使 class 名为 food 下的「第一代」子元素 li（水果、蔬菜）加入红色实线边框。
+
+  3、为什么 border 里面没有包括两个 li 的黑点呢？
+    子选择器代表子元素，这里即 li 里面的内容，不包括 li 本身
+ -->

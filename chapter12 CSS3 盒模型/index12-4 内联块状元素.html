@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>内联块状元素</title>
+  <style type="text/css">
+    a {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      text-align: center;  /* 指的是在 a 标签的块中居中显示 */
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <a>1</a>
+  <a>2</a>
+  <a>3</a>
+  <a>4</a>
+</body>
+
+</html>
+
+
+<!-- 
+  总结：内联块状元素
+  1、内联块状元素（inline-block）就是同时具备内联元素、块状元素的特点，代码 display:inline-block 就是将元素设置为内联块状元素。(css2.1 新增)，<img>、<input> 标签就是这种内联块状标签。
+
+  2、inline-block 元素特点：
+
+    1、和其他元素都在一行上；
+
+    2、元素的高度、宽度、行高以及顶和底边距都可设置。
+
+  3、注意：
+    img、input、iframe 是可替换元素不是行内块，什么是可替换元素?
+
+      可替换元素是由属性决定内容的，比如 img 的 src 属性，input 的 type 属性，行内可替换元素是可以设置宽高的，但是不能修改内容的样式。比如 img 你能 css 修改图片里面颜色吗?你能修改 iframe 里面的网页吗?
+ -->
